@@ -14,9 +14,13 @@ stages:
   Malware Scan:
     malwareExecuteScan: false
   Release:
-    tmsExport: false
+    cloudFoundryDeploy: true
+    cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
+    cfOrg: "f7302c3ftrial"
+    cfSpace: "dev"
+    cfCredentialsId: "deployonbtpcredentials"
+    deployType: "standard"
     tmsUpload: false
-    cloudFoundryDeploy: false
   Additional Unit Tests:
     npmExecuteScripts: false
   Compliance:
