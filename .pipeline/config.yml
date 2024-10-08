@@ -10,7 +10,7 @@ stages:
     npmExecuteLint: false
   Acceptance:
     cloudFoundryDeploy: false
-    npmExecuteEndToEndTests: false
+    npmExecuteEndToEndTests: true
   Malware Scan:
     malwareExecuteScan: false
   Release:
