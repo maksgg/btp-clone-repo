@@ -29,5 +29,5 @@ steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
   cloudFoundryDeploy:
-    mtaDeployParameters: "--skip-duplicate"
+    mtaDeployParameters: "-f --version-rule ALL"
 
