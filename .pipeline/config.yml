@@ -5,6 +5,7 @@ service:
   buildToolVersion: "MBTJ17N18"
 stages:
   Build:
+    source: helloworldclone
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: false
   Acceptance:
