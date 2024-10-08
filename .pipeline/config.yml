@@ -6,6 +6,7 @@ service:
 stages:
   Build:
     source: helloworldclone
+    mavenExecuteStaticCodeChecks: false
     npmExecuteLint: false
   Acceptance:
     cloudFoundryDeploy: false
@@ -27,3 +28,5 @@ stages:
 steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
+    cloudFoundryDeploy:
+    mtaDeployParameters: "-f --version-rule ALL"
