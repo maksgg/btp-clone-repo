@@ -10,17 +10,13 @@ stages:
     npmExecuteLint: false
   Acceptance:
     cloudFoundryDeploy: false
-    npmExecuteEndToEndTests: true
+    npmExecuteEndToEndTests: false
   Malware Scan:
     malwareExecuteScan: false
   Release:
-    cloudFoundryDeploy: true
-    cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
-    cfOrg: "f7302c3ftrial"
-    cfSpace: "dev"
-    cfCredentialsId: "deployonbtp"
-    deployType: "standard"
+    tmsExport: false
     tmsUpload: false
+    cloudFoundryDeploy: false
   Additional Unit Tests:
     npmExecuteScripts: false
   Compliance:
@@ -28,6 +24,3 @@ stages:
 steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
-  cloudFoundryDeploy:
-    mtaDeployParameters: "-f --version-rule ALL"
-
