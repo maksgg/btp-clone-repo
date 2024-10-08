@@ -21,7 +21,7 @@ stages:
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "f7302c3ftrial"
     cfSpace: "dev"
-    cfCredentialsId: "deployonbtpcredentials"
+    cfCredentialsId: "deployonbtp"
     deployType: "standard"
     tmsUpload: false
 steps:
